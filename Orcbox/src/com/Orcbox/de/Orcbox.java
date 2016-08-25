@@ -1,10 +1,10 @@
 package com.Orcbox.de;
 
-public class Main {
+public class Orcbox {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-	    System.out.println("DJ Orc in tha house");
+
 	}
 
 }
