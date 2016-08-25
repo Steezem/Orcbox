@@ -67,7 +67,6 @@ public class Interface extends JFrame {
 	btnSong.addActionListener(new ActionListener() {
 	    public void actionPerformed(ActionEvent e) {
 		int status = song.showOpenDialog(null);
-	    
 	    	}
 	});
 	
