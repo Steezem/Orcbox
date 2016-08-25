@@ -26,7 +26,7 @@ import javax.swing.JTextArea;
 import javax.swing.JFileChooser;
 
 public class Interface extends JFrame {
-    JFileChooser album = new JFileChooser();
+    JFileChooser library = new JFileChooser();
     JFileChooser song = new JFileChooser();
 
     /**
@@ -45,6 +45,8 @@ public class Interface extends JFrame {
 	this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 	this.getContentPane().setLayout(null);
 	this.setVisible(true);
+	library.setFileSelectionMode(JFileChooser.DIRECTORIES_ONLY);
+	song.setFileSelectionMode(JFileChooser.FILES_ONLY);
 	
 	JButton btnPlay = new JButton("Play random song");
 	btnPlay.addActionListener(new ActionListener() {
@@ -61,7 +63,7 @@ public class Interface extends JFrame {
 	JButton btnLibrary = new JButton("Open Library");
 	btnLibrary.addActionListener(new ActionListener() {
 		public void actionPerformed(ActionEvent e) {
-		    int status = album.showOpenDialog(null);
+		    int status = library.showOpenDialog(null);
 		}
 	});
 	btnLibrary.setBounds(10, 58, 118, 23);
