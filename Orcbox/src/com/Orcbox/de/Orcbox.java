@@ -8,7 +8,8 @@ public class Orcbox {
 
 
 		System.out.println("A new Musicplayer is up to come");
-		Interface window = new Interface();
+		Library lib = new Library();
+		Interface window = new Interface(lib);
 
 	}
 
