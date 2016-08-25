@@ -23,8 +23,10 @@ import javax.swing.AbstractAction;
 import javax.swing.Action;
 import javax.swing.JTextPane;
 import javax.swing.JTextArea;
+import javax.swing.JFileChooser;
 
 public class Interface extends JFrame {
+    JFileChooser song = new JFileChooser();
 
     /**
      * Launch the application.
@@ -58,6 +60,7 @@ public class Interface extends JFrame {
 	JButton btnLibrary = new JButton("Open Library");
 	btnLibrary.addActionListener(new ActionListener() {
 		public void actionPerformed(ActionEvent e) {
+		    int status = song.showOpenDialog(null);
 		}
 	});
 	btnLibrary.setBounds(10, 67, 118, 23);
@@ -71,6 +74,7 @@ public class Interface extends JFrame {
 		list.InputSongdetails();
 	    }
 	});
+	
 	this.getContentPane().add(btnCurrent);
 	
 	JLabel lblSongdetails = new JLabel("Songdetails");
