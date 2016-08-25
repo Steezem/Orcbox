@@ -6,6 +6,15 @@ import java.awt.event.ActionListener;
 import javax.swing.JButton;
 import javax.swing.JFileChooser;
 import javax.swing.JFrame;
+import javax.swing.JComboBox;
+import javax.swing.JSpinner;
+import javax.swing.JTextArea;
+import javax.swing.JList;
+import java.awt.Color;
+import javax.swing.border.BevelBorder;
+import javax.swing.border.LineBorder;
+import javax.swing.JScrollBar;
+import java.awt.List;
 
 public class Interface extends JFrame {
     JFileChooser library = new JFileChooser();
@@ -15,14 +24,14 @@ public class Interface extends JFrame {
      * Launch the application.
      */
 
-    public Interface() {
-	initialize();
+    public Interface(ArrayList2D list) {
+	initialize(list);
     }
 
     /**
      * Initialize the contents of the frame.
      */
-    private void initialize() {
+    private void initialize(ArrayList2D lib) {
 	this.setBounds(100, 100, 450, 600);
 	this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 	this.getContentPane().setLayout(null);
@@ -55,8 +64,6 @@ public class Interface extends JFrame {
 	btnCurrent.setBounds(10, 160, 153, 23);
 	btnCurrent.addActionListener(new ActionListener() {
 	    public void actionPerformed(ActionEvent e) {
-		ArrayList2D list = new ArrayList2D();
-		list.InputSongdetails();
 	    }
 	});
 	
@@ -71,7 +78,9 @@ public class Interface extends JFrame {
 	});
 	
 	getContentPane().add(btnSong);
-	ArrayList2D list = new ArrayList2D();
-	list.printList();
+	
+	List list = new List();
+	list.setBounds(259, 248, 129, 129);
+	getContentPane().add(list);
     }
 }
