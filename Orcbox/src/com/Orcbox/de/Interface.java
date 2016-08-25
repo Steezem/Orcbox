@@ -1,29 +1,11 @@
 package com.Orcbox.de;
 
-import java.awt.EventQueue;
-
-import javax.swing.JFrame;
-import javax.swing.JPanel;
-import java.awt.BorderLayout;
-import javax.swing.JButton;
-import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
-import javax.swing.SwingConstants;
-import java.awt.GridLayout;
-import java.awt.FlowLayout;
-import javax.swing.JRadioButton;
-import javax.swing.JToggleButton;
-import java.awt.Button;
-import java.awt.Color;
-import javax.swing.JMenuBar;
-import javax.swing.JMenu;
-import javax.swing.JLabel;
-import javax.swing.JMenuItem;
-import javax.swing.AbstractAction;
-import javax.swing.Action;
-import javax.swing.JTextPane;
-import javax.swing.JTextArea;
+import java.awt.event.ActionListener;
+
+import javax.swing.JButton;
 import javax.swing.JFileChooser;
+import javax.swing.JFrame;
 
 public class Interface extends JFrame {
     JFileChooser library = new JFileChooser();
