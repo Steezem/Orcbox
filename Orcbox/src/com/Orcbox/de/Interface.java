@@ -1,20 +1,12 @@
 package com.Orcbox.de;
 
+import java.awt.List;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 import javax.swing.JButton;
 import javax.swing.JFileChooser;
 import javax.swing.JFrame;
-import javax.swing.JComboBox;
-import javax.swing.JSpinner;
-import javax.swing.JTextArea;
-import javax.swing.JList;
-import java.awt.Color;
-import javax.swing.border.BevelBorder;
-import javax.swing.border.LineBorder;
-import javax.swing.JScrollBar;
-import java.awt.List;
 
 public class Interface extends JFrame {
     JFileChooser library = new JFileChooser();
