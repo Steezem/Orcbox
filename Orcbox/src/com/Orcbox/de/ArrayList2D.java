@@ -23,5 +23,6 @@ public class ArrayList2D {
 		sList.add(interpret);
 		sList.add(album);
 		sList.add(length);
+		aList.add(sList);
 	}
 }
