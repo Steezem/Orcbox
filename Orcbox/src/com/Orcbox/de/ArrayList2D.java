@@ -2,7 +2,7 @@ package com.Orcbox.de;
 
 import java.util.ArrayList;
 
-public class ArrayList2D {
+abstract class ArrayList2D {
 
 	ArrayList<ArrayList<String>> aList;
 	ArrayList<String> sList;
