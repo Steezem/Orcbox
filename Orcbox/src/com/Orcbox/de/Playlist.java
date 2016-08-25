@@ -1,4 +1,5 @@
 package com.Orcbox.de;
 
-public class Library {
+public class Playlist {
+
 }
