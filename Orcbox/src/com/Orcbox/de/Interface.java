@@ -27,22 +27,7 @@ public class Interface {
     /**
      * Launch the application.
      */
-    public static void main(String[] args) {
-	EventQueue.invokeLater(new Runnable() {
-	    public void run() {
-		try {
-		    Interface window = new Interface();
-		    window.frame.setVisible(true);
-		} catch (Exception e) {
-		    e.printStackTrace();
-		}
-	    }
-	});
-    }
 
-    /**
-     * Create the application.
-     */
     public Interface() {
 	initialize();
     }
@@ -65,7 +50,7 @@ public class Interface {
 	frame.getContentPane().add(btnPlay);
 	
 	JButton btnBurnCd = new JButton("Burn CD");
-	btnBurnCd.setBounds(307, 93, 89, 23);
+	btnBurnCd.setBounds(331, 93, 93, 23);
 	frame.getContentPane().add(btnBurnCd);
 	
 	JButton btnLibrary = new JButton("Open Library");
