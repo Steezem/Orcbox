@@ -26,6 +26,7 @@ import javax.swing.JTextArea;
 import javax.swing.JFileChooser;
 
 public class Interface extends JFrame {
+    JFileChooser album = new JFileChooser();
     JFileChooser song = new JFileChooser();
 
     /**
@@ -50,7 +51,7 @@ public class Interface extends JFrame {
 		public void actionPerformed(ActionEvent e) {
 		}
 	});
-	btnPlay.setBounds(10, 93, 118, 23);
+	btnPlay.setBounds(10, 126, 153, 23);
 	this.getContentPane().add(btnPlay);
 	
 	JButton btnBurnCd = new JButton("Burn CD");
@@ -60,14 +61,14 @@ public class Interface extends JFrame {
 	JButton btnLibrary = new JButton("Open Library");
 	btnLibrary.addActionListener(new ActionListener() {
 		public void actionPerformed(ActionEvent e) {
-		    int status = song.showOpenDialog(null);
+		    int status = album.showOpenDialog(null);
 		}
 	});
-	btnLibrary.setBounds(10, 67, 118, 23);
+	btnLibrary.setBounds(10, 58, 118, 23);
 	this.getContentPane().add(btnLibrary);
 	
 	JButton btnCurrent = new JButton("Show current Song");
-	btnCurrent.setBounds(10, 127, 131, 23);
+	btnCurrent.setBounds(10, 160, 153, 23);
 	btnCurrent.addActionListener(new ActionListener() {
 	    public void actionPerformed(ActionEvent e) {
 		ArrayList2D list = new ArrayList2D();
@@ -77,9 +78,16 @@ public class Interface extends JFrame {
 	
 	this.getContentPane().add(btnCurrent);
 	
-	JLabel lblSongdetails = new JLabel("Songdetails");
-	lblSongdetails.setBounds(10, 175, 264, 68);
-	getContentPane().add(lblSongdetails);
+	JButton btnSong = new JButton("Open Song");
+	btnSong.setBounds(10, 93, 118, 23);
+	btnSong.addActionListener(new ActionListener() {
+	    public void actionPerformed(ActionEvent e) {
+		int status = song.showOpenDialog(null);
+	    
+	    	}
+	});
+	
+	getContentPane().add(btnSong);
 	ArrayList2D list = new ArrayList2D();
 	list.printList();
     }
